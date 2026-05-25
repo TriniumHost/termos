@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="pt-br" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Termos, Privacidade e LGPD | TriniumHost</title>
+  <meta name="theme-color" content="#0b0f14">
+
+  <!-- ==== ESTILOS ==== -->
+  <style>
+    :root {
+      --bg-dark: #0b0f14;
+      --panel-dark: #111826;
+      --text-dark: #e5e7eb;
+      --muted-dark: #9aa4b2;
+
+      --bg-light: #f6f7f9;
+      --panel-light: #ffffff;
+      --text-light: #0b0f14;
+      --muted-light: #5b6574;
+
+      --accent: #60a5fa;
+      --accent-2: #22d3ee;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+
+      --radius: 18px;
+    }
+
+    /* ==== THEME HANDLING ==== */
+    [data-theme="dark"] {
+      --bg: var(--bg-dark);
+      --panel: var(--panel-dark);
+      --text: var(--text-dark);
+      --muted: var(--muted-dark);
+    }
+    [data-theme="light"] {
+      --bg: var(--bg-light);
+      --panel: var(--panel-light);
+      --text: var(--text-light);
+      --muted: var(--muted-light);
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* ==== NAVBAR ==== */
+    nav {
+      width: 100%;
+      padding: 16px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--panel);
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    }
+    nav a.logo {
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--accent);
+    }
+    nav .links a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: .95rem;
+    }
+    nav .links a:hover {
+      color: var(--accent);
+    }
+
+    /* Modo Noturno Switch */
+    .theme-toggle {
+      margin-left: 25px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      user-select: none;
+    }
+
+    /* ==== CARD ==== */
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 28px;
+    }
+    .section {
+      background: var(--panel);
+      padding: 28px;
+      border-radius: var(--radius);
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    }
+
+    h1, h2 {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.3rem; }
+
+    p, li {
+      line-height: 1.65;
+      font-size: 1rem;
+      color: var(--text);
+    }
+    ul { padding-left: 1.3rem; }
+
+    .warning-box,
+    .danger-box {
+      padding: 12px 16px;
+      border-radius: 10px;
+      margin: 16px 0;
+    }
+    .warning-box {
+      background: rgba(245, 158, 11, .15);
+      border-left: 4px solid var(--warning);
+    }
+    .danger-box {
+      background: rgba(239, 68, 68, .15);
+      border-left: 4px solid var(--danger);
+    }
+
+    /* ==== RODAPÉ ==== */
+    footer {
+      background: var(--panel);
+      margin-top: 40px;
+      padding: 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    /* ==== BOTÃO FLUTUANTE ==== */
+    .whats {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      padding: 16px;
+      background: #22c55e;
+      color: white;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,.3);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a class="logo" href="#">TriniumHost</a>
+    <div class="links">
+      <a href="#termos">Termos</a>
+      <a href="#privacidade">Privacidade</a>
+      <a href="#lgpd">LGPD</a>
+      <span class="theme-toggle" onclick="toggleTheme()">🌙</span>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- ===================== TERMOS ===================== -->
+    <section class="section" id="termos">
+      <h1>📜 Termos de Uso</h1>
+      <p>Ao contratar serviços da <strong>TriniumHost</strong>, o Usuário declara ciência e concordância com todas as condições previstas neste instrumento, que possui natureza jurídica contratual.</p>
+
+      <h2>1. Uso Autorizado e Obrigações do Usuário</h2>
+      <ul>
+        <li>É vedada qualquer utilização dos serviços para fins ilícitos, incluindo condutas tipificadas pela legislação brasileira (Código Penal, Lei nº 12.965/2014 e Lei nº 9.609/98).</li>
+        <li>É proibido o envio de SPAM, ataques DDoS, phishing, escaneamento de portas malicioso, acesso não autorizado, hospedagem de ferramentas de invasão e atividades correlatas.</li>
+        <li>O Usuário assume total responsabilidade civil e criminal pelos dados, arquivos, scripts e softwares instalados em seus serviços.</li>
+        <li>Em caso de uso ilegal, o serviço será imediatamente suspenso <strong>sem aviso prévio</strong> e <strong>sem direito a reembolso</strong>.</li>
+        <li>Logs e informações relevantes poderão ser encaminhados às autoridades competentes.</li>
+      </ul>
+
+      <div class="danger-box">
+        ⚠ Qualquer atividade criminosa resultará em cancelamento permanente da conta, retenção de dados conforme legislação e cooperação com investigações oficiais.
+      </div>
+
+      <h2>2. Política de Reembolso</h2>
+      <ul>
+        <li>O cliente possui direito à solicitação de reembolso no prazo máximo de <strong>7 (sete) dias</strong>, conforme o Código de Defesa do Consumidor.</li>
+        <li>Não haverá reembolso em caso de:
+          <ul>
+            <li>uso para fins ilícitos,</li>
+            <li>violação dos Termos,</li>
+            <li>atividade abusiva ou maliciosa,</li>
+            <li>licenças, domínios ou serviços de terceiros.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>3. Suspensão e Cancelamento</h2>
+      <ul>
+        <li>Faturas não pagas são suspensas automaticamente após 7 dias.</li>
+        <li>Dados podem ser removidos definitivamente após 15 dias de atraso.</li>
+        <li>Infrações graves resultarão em cancelamento imediato sem possibilidade de recuperação dos dados.</li>
+      </ul>
+    </section>
+
+    <!-- ===================== PRIVACIDADE ===================== -->
+    <section class="section" id="privacidade">
+      <h1>🛡️ Política de Privacidade</h1>
+
+      <h2>1. Coleta de Dados</h2>
+      <ul>
+        <li>Informações pessoais: nome, telefone, e-mail e CPF/CNPJ.</li>
+        <li>Informações técnicas: IPs, logs de acesso, registros de eventos e dados de segurança.</li>
+        <li>Dados de pagamento processados por gateways terceirizados seguros.</li>
+      </ul>
+
+      <h2>2. Finalidade do Tratamento</h2>
+      <ul>
+        <li>Autenticação e gestão de acesso.</li>
+        <li>Faturamento e emissão de notas fiscais.</li>
+        <li>Segurança da plataforma e prevenção a abusos.</li>
+        <li>Contato técnico e comunicações contratuais.</li>
+      </ul>
+
+      <h2>3. Compartilhamento</h2>
+      <ul>
+        <li>Não vendemos informações pessoais.</li>
+        <li>Somente compartilhamos dados quando exigido por lei ou decisão judicial.</li>
+        <li>Logs podem ser fornecidos às autoridades para investigação criminal.</li>
+      </ul>
+
+      <h2>4. Segurança</h2>
+      <ul>
+        <li>Utilizamos criptografia, firewall, anti-DDoS e auditoria interna.</li>
+        <li>O usuário é responsável pela guarda de suas senhas.</li>
+      </ul>
+    </section>
+
+    <!-- ===================== LGPD ===================== -->
+    <section class="section" id="lgpd">
+      <h1>📘 LGPD — Lei Geral de Proteção de Dados</h1>
+
+      <h2>1. Fundamentos da LGPD</h2>
+      <p>A TriniumHost adota práticas em conformidade com a Lei nº 13.709/2018, garantindo:</p>
+      <ul>
+        <li>Finalidade legítima para todo tratamento de dados;</li>
+        <li>Transparência nas operações;</li>
+        <li>Segurança técnica e administrativa;</li>
+        <li>Não discriminação;</li>
+        <li>Responsabilização e prestação de contas.</li>
+      </ul>
+
+      <h2>2. Direitos do Titular de Dados</h2>
+      <ul>
+        <li>Confirmação de existência de tratamento;</li>
+        <li>Acesso aos dados;</li>
+        <li>Correção de informações incompletas ou desatualizadas;</li>
+        <li>Eliminação de dados tratados com consentimento;</li>
+        <li>Portabilidade;</li>
+        <li>Revogação do consentimento.</li>
+      </ul>
+
+      <h2>3. Canal do Encarregado (DPO)</h2>
+      <p>O responsável pelo tratamento de dados pode ser contatado via e-mail:</p>
+      <p><strong>📩 support@mail.triniumhost.com</strong></p>
+    </section>
+
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer>
+    TriniumHost © 2025 — Todos os direitos reservados<br>
+    Última atualização: 24 de novembro de 2025
+  </footer>
+
+  <!-- BOTÃO WHATSAPP -->
+  <a class="whats" href="https://wa.me/5599991003642" target="_blank">💬</a>
+
+  <!-- SCRIPT DO MODO ESCURO -->
+  <script>
+    function toggleTheme() {
+      let html = document.documentElement;
+      let current = html.getAttribute("data-theme");
+      html.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+    }
+  </script>
+
+</body>
+</html>
